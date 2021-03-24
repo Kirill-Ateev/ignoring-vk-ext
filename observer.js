@@ -10,13 +10,11 @@ const config = {
 // Колбэк-функция при срабатывании мутации
 const callback = function(mutationsList, observer) {
     for (let mutation of mutationsList) {
-       if (mutation.type === 'childList') {
 let elem = document.querySelectorAll('[data-peer="17382564"]')
             Array.prototype.forEach.call( elem, function( node ) {
 node.parentNode.removeChild( node );
 });
-
-}}
+}
 };
 
 // Создаём экземпляр наблюдателя с указанной функцией колбэка
