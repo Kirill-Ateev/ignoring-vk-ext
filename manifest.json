@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "igoring-vk-ext",
+    "version": "0.7",
+    "content_scripts": [
+        {
+          "matches": [
+            "https://vk.com/im*"
+          ],
+          "js": ["observer.js"]
+        }
+      ],
+      "browser_action": {
+        "default_icon": "icon.png"
+      }
+
+}
