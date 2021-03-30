@@ -1,7 +1,10 @@
 {
     "manifest_version": 2,
     "name": "igoring-vk-ext",
-    "version": "0.7",
+    "version": "0.7.1",
+    "background": {
+      "scripts": ["background.js"]
+    },
     "content_scripts": [
         {
           "matches": [
