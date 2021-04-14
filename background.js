@@ -22,7 +22,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
       if( request.message === "interface" ) {
-
+        chrome.tabs.create({"url": request.url});
       }
     }
   );
